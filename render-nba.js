@@ -37,10 +37,9 @@ export function renderNbaEl(teamObject) {
 
         playerDiv.append(playerNameEl, playerPositionEl, playerAgeEl);
         startersDiv.append(playerDiv);
-        return startersDiv;
     }
 
-    nbaEl.append(nameEl, coachEl, championshipsEl, startersDiv);
+    nbaEl.append(nameEl, coachEl, arenaEl, championshipsEl, startersDiv);
 
     return nbaEl;
 }

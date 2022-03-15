@@ -27,3 +27,13 @@ for (let car of cars) {
 
     carSectionEl.append(carEl);
 }
+
+import { NBA } from './data-nba.js';
+import { renderNbaEl } from './render-nba.js';
+const nbaSectionEl = document.querySelector('.nba-section');
+
+for (let team of NBA) {
+    const nbaEl = renderNbaEl(team);
+
+    nbaSectionEl.append(nbaEl);
+}
