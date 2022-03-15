@@ -10,18 +10,19 @@ export function renderNbaEl(teamObject) {
 
     nbaEl.classList.add('team');
     startersDiv.classList.add('starters');
+    lineupEl.classList.add('lineup');
 
     nameEl.textContent = teamObject.team.city + ' ' + teamObject.team.name;
     coachEl.textContent = `Coached by ${teamObject.coach}`;
     arenaEl.textContent = `Home games played at ${teamObject.arena}`;
     championshipsEl.textContent = 'Championships: ';
+    lineupEl.textContent = 'Starting Lineup';
 
     for (let championships of teamObject.championships) {
         championshipsEl.append(championships + ' ');
     }
 
-    lineupEl.textContent = 'Starting Lineup';
-    startersDiv.append(lineupEl);
+    // startersDiv.append(lineupEl);
 
     for (let player of teamObject.starters) {
         const playerDiv = document.createElement('div');
@@ -39,7 +40,7 @@ export function renderNbaEl(teamObject) {
         startersDiv.append(playerDiv);
     }
 
-    nbaEl.append(nameEl, coachEl, arenaEl, championshipsEl, startersDiv);
+    nbaEl.append(nameEl, coachEl, arenaEl, championshipsEl, lineupEl, startersDiv);
 
     return nbaEl;
 }
