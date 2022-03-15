@@ -1,8 +1,3 @@
-// import functions and grab DOM elements
-
-// initialize global state
-
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+import { states } from './data-states.js';
+import { renderStateEl } from './render-states.js';
+const stateListEl = document.querySelector('.state-section');
