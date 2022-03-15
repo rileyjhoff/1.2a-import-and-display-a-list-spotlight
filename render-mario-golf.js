@@ -7,6 +7,9 @@ export function renderMarioGolfEl(characterObject) {
     const controlEl = document.createElement('li');
     const spinEl = document.createElement('li');
 
+    marioGolfEl.classList.add('character');
+    statListEl.classList.add('character-stat-list');
+
     nameEl.textContent = characterObject.name;
     specialEl.textContent = `Special Shot: ${characterObject.special}`;
     statListEl.textContent = 'Stats:';

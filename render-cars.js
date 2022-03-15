@@ -6,6 +6,9 @@ export function renderCarEl(carObject) {
     const highwayEl = document.createElement('li');
     const msrpEl = document.createElement('p');
 
+    carEl.classList.add('car');
+    mpgListEl.classList.add('car-mpg-list');
+
     nameEl.textContent = carObject.make + ' ' + carObject.model;
     mpgListEl.textContent = 'MPG:';
     cityEl.textContent = `City: ${carObject.mpg.city}`;

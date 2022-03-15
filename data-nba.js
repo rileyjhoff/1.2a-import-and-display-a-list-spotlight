@@ -33,7 +33,7 @@ export const NBA = [
         ],
         coach: 'Chauncey Billups',
         arena: 'Moda Center',
-        championships: [1977]
+        championships: ['1977']
     },
     {
         team: {
@@ -69,7 +69,7 @@ export const NBA = [
         ],
         coach: 'Michael Malone',
         arena: 'Ball Arena',
-        championships: ['none']
+        championships: ['None']
     },
     {
         team: {
@@ -105,7 +105,7 @@ export const NBA = [
         ],
         coach: 'Frank Vogel',
         arena: 'Crypto.com Arena',
-        championships: [1949, 1950, 1952, 1953, 1954, 1972, 1980, 1982, 1985, 1987, 1988, 2000, 2001, 2002, 2009, 2010, 2020]
+        championships: ['1949,', '1950,', '1952,', '1953,', '1954,', '1972,', '1980,', '1982,', '1985,', '1987,', '1988,', '2000,', '2001,', '2002,', '2009,', '2010,', '2020']
     },
     {
         team: {
@@ -141,6 +141,6 @@ export const NBA = [
         ],
         coach: 'Billy Donovan',
         arena: 'United Center',
-        championships: [1991, 1992, 1993, 1996, 1997, 1998]
+        championships: ['1991,', '1992,', '1993,', '1996,', '1997,', '1998']
     },
 ];
