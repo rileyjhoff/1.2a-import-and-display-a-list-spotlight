@@ -2,25 +2,37 @@ export const cars = [
     {
         make: 'Subaru',
         model: 'Outback',
-        mpg: '26 city / 33 highway',
+        mpg: {
+            city: 26,
+            highway: 33
+        },        
         msrp: '$27,145'
     },
     {
         make: 'Toyota',
         model: 'RAV4',
-        mpg: '27 city / 35 highway',
+        mpg: {
+            city: 27,
+            highway: 35
+        },
         msrp: '$26,525'
     },
     {
         make: 'Ford',
         model: 'F-150',
-        mpg: '25 city / 25 highway',
+        mpg: {
+            city: 25,
+            highway: 25
+        },
         msrp: '$29,990'
     },
     {
         make: 'Dodge',
         model: 'Charger',
-        mpg: '19 city / 30 highway',
+        mpg: {
+            city: 19,
+            highway: 30
+        },
         msrp: '$32,500'
     }
 ];
