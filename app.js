@@ -8,3 +8,12 @@ for (let state of states) {
     stateListEl.append(stateEl);
 }
 
+import { marioGolf } from './data-mario-golf.js';
+import { renderMarioGolfEl } from './render-mario-golf.js';
+const marioListEl = document.querySelector('.mario-section');
+
+for (let character of marioGolf) {
+    const marioGolfEl = renderMarioGolfEl(character);
+
+    marioListEl.append(marioGolfEl);
+}
