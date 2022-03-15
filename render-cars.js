@@ -8,6 +8,7 @@ export function renderCarEl(carObject) {
 
     carEl.classList.add('car');
     mpgListEl.classList.add('car-mpg-list');
+    nameEl.classList.add('name');
 
     nameEl.textContent = carObject.make + ' ' + carObject.model;
     mpgListEl.textContent = 'MPG:';

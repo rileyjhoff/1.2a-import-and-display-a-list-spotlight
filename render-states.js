@@ -13,10 +13,11 @@ export function renderStateEl(stateObject) {
     const admittedEl = document.createElement('p');
 
     stateEl.classList.add('state');
+    nameEl.classList.add('name');
 
     nameEl.textContent = stateObject.name;
     capitalEl.textContent = `Capital: ${stateObject.capital}`;
-    populationEl.textContent = `Populatoin: ${stateObject.population}`;
+    populationEl.textContent = `Population: ${stateObject.population}`;
     admittedEl.textContent = `Admitted to the Union in ${stateObject.admitted}`;
 
     stateEl.append(nameEl, capitalEl, populationEl, admittedEl);

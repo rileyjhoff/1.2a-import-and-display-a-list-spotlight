@@ -115,6 +115,7 @@ footer {
 .state-section, .mario-section, .car-section, .nba-section {
     display: flex;
     flex-flow: wrap;
+    justify-content: space-around;
 }
 
 .state-section *, .mario-section *, .car-section *, .nba-section * {
@@ -122,11 +123,62 @@ footer {
     margin: 5px;
 }
 
+.nba-section {
+    height: 1700px
+}
+
+.state, .car, .character {
+    box-shadow: 5px 5px 15px -7px #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.state {
+    width: 235px;
+    height: 235px;
+    background-color: greenyellow;
+}
+
+.character {
+    width: 235px;
+    background-color: aqua;
+}
+
+.car {
+    width: 221px;
+    background-color:coral;
+}
+
+.team {
+    box-shadow: 5px 5px 15px -7px #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 775px;
+    background-color:ivory
+}
+
 .starters {
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
+    width: 350px;
+    border: solid 1px black;
 }
 
-.lineup {
-    text-align: center;
+.team p {
+    max-width: 300px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 155px;
+    margin: 0;
 }

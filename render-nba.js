@@ -7,10 +7,9 @@ export function renderNbaEl(teamObject) {
     const startersDiv = document.createElement('div');
     const lineupEl = document.createElement('h3');
 
-
+    nameEl.classList.add('name');
     nbaEl.classList.add('team');
     startersDiv.classList.add('starters');
-    lineupEl.classList.add('lineup');
 
     nameEl.textContent = teamObject.team.city + ' ' + teamObject.team.name;
     coachEl.textContent = `Coached by ${teamObject.coach}`;

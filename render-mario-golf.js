@@ -9,6 +9,7 @@ export function renderMarioGolfEl(characterObject) {
 
     marioGolfEl.classList.add('character');
     statListEl.classList.add('character-stat-list');
+    nameEl.classList.add('name');
 
     nameEl.textContent = characterObject.name;
     specialEl.textContent = `Special Shot: ${characterObject.special}`;
